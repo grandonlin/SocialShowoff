@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43DA0AC87DCB97665500DF26 /* Pods_SocialShowoff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E53C5BE39486FC4E25DCCE /* Pods_SocialShowoff.framework */; };
 		C1A0AAF41E8CA3840090CF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0AAF31E8CA3840090CF2B /* AppDelegate.swift */; };
-		C1A0AAF61E8CA3840090CF2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0AAF51E8CA3840090CF2B /* ViewController.swift */; };
+		C1A0AAF61E8CA3840090CF2B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0AAF51E8CA3840090CF2B /* SignInVC.swift */; };
 		C1A0AAF91E8CA3840090CF2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A0AAF71E8CA3840090CF2B /* Main.storyboard */; };
 		C1A0AAFB1E8CA3840090CF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A0AAFA1E8CA3840090CF2B /* Assets.xcassets */; };
 		C1A0AAFE1E8CA3840090CF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A0AAFC1E8CA3840090CF2B /* LaunchScreen.storyboard */; };
+		C1A0AB061E8CA4860090CF2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1A0AB051E8CA4860090CF2B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09E53C5BE39486FC4E25DCCE /* Pods_SocialShowoff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialShowoff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E41C47D1627C5DBB9B08DB8 /* Pods-SocialShowoff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialShowoff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialShowoff/Pods-SocialShowoff.debug.xcconfig"; sourceTree = "<group>"; };
+		70241141B2929F11222749DB /* Pods-SocialShowoff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialShowoff.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialShowoff/Pods-SocialShowoff.release.xcconfig"; sourceTree = "<group>"; };
 		C1A0AAF01E8CA3840090CF2B /* SocialShowoff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialShowoff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A0AAF31E8CA3840090CF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1A0AAF51E8CA3840090CF2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1A0AAF51E8CA3840090CF2B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C1A0AAF81E8CA3840090CF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1A0AAFA1E8CA3840090CF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A0AAFD1E8CA3840090CF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A0AAFF1E8CA3840090CF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A0AB051E8CA4860090CF2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DA0AC87DCB97665500DF26 /* Pods_SocialShowoff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4D1D9161B213A845A989A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E53C5BE39486FC4E25DCCE /* Pods_SocialShowoff.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1A0AAE71E8CA3840090CF2B = {
 			isa = PBXGroup;
 			children = (
 				C1A0AAF21E8CA3840090CF2B /* SocialShowoff */,
 				C1A0AAF11E8CA3840090CF2B /* Products */,
+				DD574A9AABD0167A18D09A5B /* Pods */,
+				A4D1D9161B213A845A989A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,48 @@
 		C1A0AAF21E8CA3840090CF2B /* SocialShowoff */ = {
 			isa = PBXGroup;
 			children = (
+				C1A0AB091E8DEA450090CF2B /* Model */,
+				C1A0AB081E8DEA400090CF2B /* View */,
+				C1A0AB071E8DEA3A0090CF2B /* Controller */,
 				C1A0AAF31E8CA3840090CF2B /* AppDelegate.swift */,
-				C1A0AAF51E8CA3840090CF2B /* ViewController.swift */,
 				C1A0AAF71E8CA3840090CF2B /* Main.storyboard */,
 				C1A0AAFA1E8CA3840090CF2B /* Assets.xcassets */,
 				C1A0AAFC1E8CA3840090CF2B /* LaunchScreen.storyboard */,
+				C1A0AB051E8CA4860090CF2B /* GoogleService-Info.plist */,
 				C1A0AAFF1E8CA3840090CF2B /* Info.plist */,
 			);
 			path = SocialShowoff;
+			sourceTree = "<group>";
+		};
+		C1A0AB071E8DEA3A0090CF2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1A0AAF51E8CA3840090CF2B /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C1A0AB081E8DEA400090CF2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C1A0AB091E8DEA450090CF2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DD574A9AABD0167A18D09A5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E41C47D1627C5DBB9B08DB8 /* Pods-SocialShowoff.debug.xcconfig */,
+				70241141B2929F11222749DB /* Pods-SocialShowoff.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1A0AB021E8CA3840090CF2B /* Build configuration list for PBXNativeTarget "SocialShowoff" */;
 			buildPhases = (
+				F006096FDE29F2DEC2FAFA5E /* [CP] Check Pods Manifest.lock */,
 				C1A0AAEC1E8CA3840090CF2B /* Sources */,
 				C1A0AAED1E8CA3840090CF2B /* Frameworks */,
 				C1A0AAEE1E8CA3840090CF2B /* Resources */,
+				B37217D20B5F33C3DAA6ADAD /* [CP] Embed Pods Frameworks */,
+				796088A32994CDAAFA2713A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A0AAFE1E8CA3840090CF2B /* LaunchScreen.storyboard in Resources */,
+				C1A0AB061E8CA4860090CF2B /* GoogleService-Info.plist in Resources */,
 				C1A0AAFB1E8CA3840090CF2B /* Assets.xcassets in Resources */,
 				C1A0AAF91E8CA3840090CF2B /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		796088A32994CDAAFA2713A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialShowoff/Pods-SocialShowoff-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37217D20B5F33C3DAA6ADAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialShowoff/Pods-SocialShowoff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F006096FDE29F2DEC2FAFA5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1A0AAEC1E8CA3840090CF2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A0AAF61E8CA3840090CF2B /* ViewController.swift in Sources */,
+				C1A0AAF61E8CA3840090CF2B /* SignInVC.swift in Sources */,
 				C1A0AAF41E8CA3840090CF2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,12 +362,13 @@
 		};
 		C1A0AB031E8CA3840090CF2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E41C47D1627C5DBB9B08DB8 /* Pods-SocialShowoff.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UM5SX26C6N;
 				INFOPLIST_FILE = SocialShowoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialShowoff;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grandonlin.SocialShowoff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,12 +376,13 @@
 		};
 		C1A0AB041E8CA3840090CF2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70241141B2929F11222749DB /* Pods-SocialShowoff.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UM5SX26C6N;
 				INFOPLIST_FILE = SocialShowoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialShowoff;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grandonlin.SocialShowoff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +407,7 @@
 				C1A0AB041E8CA3840090CF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
